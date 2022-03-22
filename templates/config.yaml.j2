@@ -59,7 +59,7 @@ location:
 # https://borgbackup.readthedocs.io/en/stable/usage/general.html#environment-variables for
 # details.
 storage:
-    encryption_passphrase: {{ borg_encryption_passphrase }}
+    encryption_passphrase: "{{ borg_encryption_passphrase }}"
 
     # The standard output of this command is used to unlock the encryption key. Only
     # use on repositories that were initialized with passcommand/repokey encryption.
